@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutteremailreplyparser/email_reply_parser.dart';
+import 'package:flutter_email_reply_parser/email_reply_parser.dart';
 
 class Example extends StatefulWidget {
   @override

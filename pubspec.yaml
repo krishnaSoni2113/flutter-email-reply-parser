@@ -1,6 +1,6 @@
-name: flutteremailreplyparser
+name: flutter_email_reply_parser
 description: Email reply parser is a package to parse plain text email content.
-version: 0.0.1
+version: 0.0.3
 author: Krishna Soni <krishnasoni2113@gmail.com>
 homepage: https://github.com/krishnaSoni2113/flutter-email-reply-parser
 

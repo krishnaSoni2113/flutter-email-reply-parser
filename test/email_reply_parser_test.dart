@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutteremailreplyparser/email_processed.dart';
-import 'package:flutteremailreplyparser/email_reply_parser.dart';
+import 'package:flutter_email_reply_parser/email_processed.dart';
+import 'package:flutter_email_reply_parser/email_reply_parser.dart';
 import 'email_example_constant.dart';
 
 main(){
