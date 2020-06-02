@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteremailreplyparser/flutteremailreplyparser.dart';
 
 class Example extends StatefulWidget {
   @override
@@ -8,7 +9,7 @@ class Example extends StatefulWidget {
 class _ExampleState extends State<Example> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return EmailDetail();
   }
 
 

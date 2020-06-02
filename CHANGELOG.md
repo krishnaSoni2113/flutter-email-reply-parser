@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - Release
 
-* TODO: Describe initial release.
+* Email reply parser is a package written in dart to parse plain text email content.

@@ -1,7 +1,15 @@
 library flutteremailreplyparser;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:flutter/material.dart';
+
+class EmailDetail extends StatefulWidget {
+  @override
+  _EmailDetailState createState() => _EmailDetailState();
+}
+
+class _EmailDetailState extends State<EmailDetail> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
