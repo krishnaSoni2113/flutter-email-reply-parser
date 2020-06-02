@@ -11,7 +11,7 @@ Email reply parser is a package to parse plain text email content.
    dependencies:
      flutter:
        sdk: flutter
-     flutteremailreplyparser:
+     flutter_email_parser:
 ```
 
 ## How to use
