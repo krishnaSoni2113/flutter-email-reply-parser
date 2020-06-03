@@ -4,11 +4,15 @@ import 'fragment_dto.dart';
 
 class EmailParser {
   static final RegExp sigRegExp = RegExp(
-      '((^Sent from my (\\s*\\w+){1,3}\$)|(^-\\w|^\\s?__|^\\s?--|^\u2013|^\u2014))',
-      dotAll: true,);
-  static final RegExp quoteRegExp = RegExp('(^>+)', dotAll: true,);
+    '((^Sent from my (\\s*\\w+){1,3}\$)|(^-\\w|^\\s?__|^\\s?--|^\u2013|^\u2014))',
+    dotAll: true,
+  );
+  static final RegExp quoteRegExp = RegExp(
+    '(^>+)',
+    dotAll: true,
+  );
   static List<RegExp> _compiledQuoteHeaderPatterns = [];
-  static const  wordList = <String>[
+  static const wordList = <String>[
     "confidential",
     "transmitted",
     "disclosing",
@@ -113,8 +117,7 @@ class EmailParser {
           _addFragment(fragment);
 
           fragment = null;
-        }
-        else if (_isQuoteHeader(paragraph)) {
+        } else if (_isQuoteHeader(paragraph)) {
           fragment.isQuoted = true;
           _addFragment(fragment);
 
@@ -141,15 +144,14 @@ class EmailParser {
 
       /// Add line to fragment and paragraph
       /// Do not add line if is Confidential or Disclaimer.
-      if (!_getDisclaimerScore(line))
-        fragment.lines.add(line);
+      if (!_getDisclaimerScore(line)) fragment.lines.add(line);
 
       if (line.isNotEmpty) {
         paragraph.add(line);
       }
     }
 
-    if (fragment != null){
+    if (fragment != null) {
       _addFragment(fragment);
     }
 
@@ -295,9 +297,8 @@ class EmailParser {
   bool _getDisclaimerScore(String stringToTest) {
     final lowerCaseStringToTest = stringToTest.toLowerCase();
     int findLength = 0;
-    findLength = wordList
-        .where((word)
-    => lowerCaseStringToTest.contains(word)).length;
+    findLength =
+        wordList.where((word) => lowerCaseStringToTest.contains(word)).length;
     return findLength > 0;
   }
 }

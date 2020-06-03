@@ -15,3 +15,6 @@
 
 * Fixed maintenance stuffs. 
 
+## [0.1.1] - Release
+
+* Updated the Email parser quoteRegExp and sigRegExp. 
