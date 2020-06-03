@@ -1,4 +1,4 @@
-# flutteremailreplyparser
+# flutter_email_reply_parser
 
 Email reply parser is a package to parse plain text email content.
 

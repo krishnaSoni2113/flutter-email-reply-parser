@@ -11,4 +11,7 @@
 
 * Email reply parser is a package written in dart to parse plain text email content. 
  
+## [0.1.0] - Release
+
+* Fixed maintenance stuffs. 
 

@@ -3,10 +3,10 @@ import 'fragment.dart';
 import 'fragment_dto.dart';
 
 class EmailParser {
-  static final RegExp SIG_REGEXP = RegExp(
+  static final RegExp sigRegExp = RegExp(
       '((^Sent from my (\\s*\\w+){1,3}\$)|(^-\\w|^\\s?__|^\\s?--|^\u2013|^\u2014))',
       dotAll: true,);
-  static final RegExp QUOTE_REGEXP = RegExp('(^>+)', dotAll: true,);
+  static final RegExp quoteRegExp = RegExp('(^>+)', dotAll: true,);
   static List<RegExp> _compiledQuoteHeaderPatterns = [];
   static const  wordList = <String>[
     "confidential",
@@ -229,14 +229,14 @@ class EmailParser {
   ///@param line
   ///@return
   bool _isSignature(String line) {
-    return SIG_REGEXP.hasMatch(line);
+    return sigRegExp.hasMatch(line);
   }
 
   ///Checks if the line is quoted line.
   ///@param line
   ///@return
   bool _isQuote(String line) {
-    return QUOTE_REGEXP.hasMatch(line);
+    return quoteRegExp.hasMatch(line);
   }
 
   ///Checks if lines in the fragment are empty.

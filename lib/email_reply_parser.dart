@@ -2,9 +2,10 @@ import 'email_processed.dart';
 import 'email_parser.dart';
 
 class EmailReplyParser {
-
   static final EmailReplyParser _instance = EmailReplyParser._internal();
+
   EmailReplyParser._internal();
+
   EmailParser _parser;
   bool _initialized = false;
 
@@ -17,8 +18,7 @@ class EmailReplyParser {
   }
 
   EmailProcessed read({String emailText}) {
-    if (emailText == null)
-      emailText = "";
+    if (emailText == null) emailText = "";
     return _parser.parse(emailText: emailText);
   }
 
