@@ -3,7 +3,7 @@ import 'package:flutter_email_parser/email_parser.dart';
 import 'package:flutter_email_parser/email_processed.dart';
 import 'package:flutter_email_parser/fragment.dart';
 
-import 'email_example_constant.dart';
+import 'email_format.dart';
 
 main() {
   setUp(() {});

@@ -18,3 +18,7 @@
 ## [0.1.1] - Release
 
 * Updated the Email parser quoteRegExp and sigRegExp. 
+
+## [0.1.2] - Release
+
+* Added unit test cases for various email format. 

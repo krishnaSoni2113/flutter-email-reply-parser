@@ -68,33 +68,6 @@ riak-users@lists.basho.com
 http://lists.basho.com/mailman/listinfo/riak-users_lists.basho.com
 """;
 
-
-const email_TEST = """
-"One more test
-
-Get Outlook for Android
-From: Shiju Thomas <shiju.thomas@iamplus.com>
-Sent: Monday, May 25, 2020 4:01:49 PM
-To: Shiju Thomas <shiju.thomas@iamplus.com>
-Subject: Re: Test todo
- 
-Ok checking this again for testing
-
-Get Outlook for Android
-From: Shiju Thomas <shiju.thomas@iamplus.com>
-Sent: Monday, May 25, 2020 2:39:54 PM
-To: Shiju Thomas <shijus@gmail.com>
-Subject: Test todo
- 
-Hi
-
-Can you please send me report tomorrow.
-
- 
-
-Shiju"
-""";
-
 const email_iphone = """
 Here is another email
 
@@ -229,103 +202,6 @@ _______________________________________________
 riak-users mailing list
 riak-users@lists.basho.com
 http://lists.basho.com/mailman/listinfo/riak-users_lists.basho.com
-""";
-
-
-const email_new = """
-\r\n
-Hello Mr Shiju,
-
-Thanks for your confirmation with Mr Deep! 
-
-As per your discussion with Mr Deep, You will be allocated two  resources for the trial task from tomorrow morning so you can assign the task to them accordingly. 
-
-Looking forward to long time engagement with you :)
-
-
-Regards
-
-On Tue, May 26, 2020 at 1:57 PM Hardik  <hardik.@sss.com> wrote:
-Hello Mr Shiju,
-
-Good Afternoon!
-
-Regards
---
-Hardik Dangodara
-
-    
-
-\"\"
-
-
---
-Hardik Dangodara
-    
-\"\"
-""";
-
-const email_new_2 = """
-\r\n
-
-Commenting inline
-
-Shiju
-Get Outlook for Android
-
-From: John K.Antony <john.antony@iamplus.com>
-Sent: Monday, May 25, 2020, 10:01 PM
-To: Shiju Thomas
-Subject: Re: Test html
-
-Ok Shiju
-
-Looks good
-
----------------------
-John K Antony, Distinguished Engineer.
-+91 98451 69304
-i.am+ Bangalore, India.
-
-On 25-May-2020, at 7:30 PM, Shiju Thomas <shiju.thomas@iamplus.com> wrote:
-
-Hi John,
- 
- 
-Hello how are you doing.
- 
-How do we test email.
-Adding one more line
-Added more text here
- 
-Hello
- 
-Shiju
-""";
-
-const email_new_3 = """
-Hi Shay,
- 
-The team is happy with Rish and Rit and would like to proceed further.
-Let’s proceed with an offer and see how It goes 😊
- 
-Regards,
-Shiju
-""";
-
-//TODO: Need custome RegExp for the Confidential/disclaimer things.
-
-const email_new_4 = """
-FYI – Apple will be starting with us 22/06/2020, not sure if you guys are in contact or if this was shared with you yet =)
- 
-Thanks
- 
-Shay
- 
-shay markarian
-I.AM+ | People | US
- 
-Confidentiality Notice: The contents of this email, all related responses and any files and/or attachments transmitted with it are CONFIDENTIAL and are intended solely for the use of the individual or entity to whom they are addressed. This email may contain legally privileged information and may not be disclosed or forwarded to anyone else without authorization from the originator of this email. If you have received this email in error, please notify the sender immediately and delete all copies from your system.
 """;
 
 const email_4 = """

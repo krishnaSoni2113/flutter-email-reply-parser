@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_email_parser/email_processed.dart';
 import 'package:flutter_email_parser/email_reply_parser.dart';
-import 'email_example_constant.dart';
+import 'email_format.dart';
 
 main(){
 
@@ -68,29 +68,6 @@ main(){
     test("Test Unquoted Reply", () async {
       expect("This is my reply.",
           _emailReplyParser.parseReply(emailText: email_unquoted_reply));
-    });
-
-    test("Test Outlook Email1", () async {
-      EmailProcessed email = _emailReplyParser.read(emailText: email_new);
-      String expectedString = "\n\nHello Mr Shiju,\n\nThanks for your confirmation with Mr Deep!\n\nAs per your discussion with Mr Deep, You will be allocated two  resources for the trial task from tomorrow morning so you can assign the task to them accordingly.\n\nLooking forward to long time engagement with you :)\n\n\nRegards";
-      expect(expectedString, email.getVisibleText());
-    });
-
-    test("Test Outlook Email2", () async {
-      EmailProcessed email = _emailReplyParser.read(emailText: email_new_2);
-      String expectedString = "\n\n\nCommenting inline\n\nShiju\nGet Outlook for Android";
-      expect(expectedString, email.getVisibleText());
-    });
-
-    test("Test Outlook Email3", () async {
-      EmailProcessed email = _emailReplyParser.read(emailText: email_new_3);
-      String expectedString = "Hi Shay,\n\nThe team is happy with Rish and Rit and would like to proceed further.\nLet’s proceed with an offer and see how It goes 😊\n\nRegards,\nShiju";
-      expect(expectedString, email.getVisibleText());
-    });
-
-    test("Test Confidential Email", () async {
-      EmailProcessed email = _emailReplyParser.read(emailText: email_new_4);
-      expect("FYI – Apple will be starting with us 22/06/2020, not sure if you guys are in contact or if this was shared with you yet =)\n\nThanks\n\nShay\n\nshay markarian\nI.AM+ | People | US", email.getVisibleText());
     });
 
   });
